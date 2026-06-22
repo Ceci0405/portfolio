@@ -1,0 +1,101 @@
+.titulo{
+    display: inline-block;
+    background-color: #8B0000;
+    color: white;
+    font-size: 48px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin: 0 auto;
+    
+  }
+  .titulo-proyectos-contenedor {
+    display: flex;
+    justify-content: flex-start; /* los junta al inicio */
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding: 0 2rem;
+    gap: 1rem; /* controla la distancia entre ellos */
+  }
+  
+  
+  .botonrepo {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #8B0000; 
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  }
+  
+  .botonrepo:hover {
+    background-color: #8B0000;
+    transform: scale(1.05);
+  }
+  
+  @keyframes fadeSlideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .proyectos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    animation: fadeSlideUp 1s ease-out both;
+  }
+
+ 
+  .proyecto1, .proyecto2, .proyecto3 {
+    width: 320px;
+    background-color: #000000;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .proyecto1:hover, .proyecto2:hover, .proyecto3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  }
+  .proyecto1 img, .proyecto2 img, .proyecto3 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .proyecto1:hover img, .proyecto2:hover img, .proyecto3:hover img {
+    transform: scale(1.03);
+  }
+  .imagenproyectos img {
+    width: 100%;
+    max-width: 400px; /* Ajusta según tu diseño */
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover; /* Mantiene proporciones sin deformar */
+  }
+  
+  .imagenproyectos img:hover {
+    transform: scale(1.1);
+  }
+ 

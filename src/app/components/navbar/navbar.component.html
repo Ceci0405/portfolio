@@ -1,0 +1,23 @@
+<nav [class.scrolled]="scrolled">
+  <div class="nav-inner">
+    <span class="logo" (click)="scrollTo('hero')">세시<span class="accent">.</span></span>
+
+    <div class="nav-right">
+      <ul class="nav-links" [class.open]="menuOpen">
+        <li (click)="scrollTo('about')">Sobre mí</li>
+        <li (click)="scrollTo('skills')">Habilidades</li>
+        <li (click)="scrollTo('projects')">Proyectos</li>
+        <li (click)="scrollTo('contact')">Contacto</li>
+      </ul>
+
+      <button class="theme-toggle" (click)="toggleDark()" [title]="darkMode ? 'Modo claro' : 'Modo oscuro'">
+        <span *ngIf="!darkMode">🌙</span>
+        <span *ngIf="darkMode">☀️</span>
+      </button>
+
+      <button class="hamburger" (click)="menuOpen = !menuOpen" [class.open]="menuOpen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>

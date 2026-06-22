@@ -1,0 +1,36 @@
+<section id="hero" class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="tag reveal">Fullstack Dev — Frontend at heart</div>
+      <h1 class="hero-name reveal">
+        <span class="first">CELIA URCOLA</span>
+        <span class="last">ROSEL<span class="accent">.</span></span>
+      </h1>
+      <p class="hero-sub reveal">
+        Construyo interfaces que conectan belleza y seguridad —<br>
+        porque el código también puede ser arte.
+      </p>
+      <div class="hero-actions reveal">
+        <button class="btn-primary" (click)="scrollTo('projects')">Ver proyectos</button>
+        <button class="btn-ghost" (click)="scrollTo('contact')">Contactar</button>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="initials-card">
+        <span class="initials">CU</span>
+        <div class="deco-ring ring-1"></div>
+        <div class="deco-ring ring-2"></div>
+      </div>
+      <div class="stats" *ngIf="user">
+        <div class="stat"><span class="num">{{user.public_repos}}</span><span class="lbl">repos</span></div>
+        <div class="stat"><span class="num">{{user.followers}}</span><span class="lbl">followers</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <span>scroll</span>
+    <div class="line"></div>
+  </div>
+</section>

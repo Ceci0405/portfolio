@@ -1,0 +1,35 @@
+<section id="projects" class="section projects-section">
+  <div class="container">
+    <div class="section-label">Proyectos</div>
+    <h2 class="section-title reveal">Mis trabajos en GitHub</h2>
+    <div class="divider"></div>
+
+    <div class="projects-grid">
+      <a *ngFor="let project of projects" [href]="project.url" target="_blank" class="project-card reveal">
+        <div class="card-top">
+          <div class="repo-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9z"/>
+            </svg>
+          </div>
+          <span class="gh-tag">GitHub →</span>
+        </div>
+
+        <h3 class="repo-name">{{project.name}}</h3>
+        <p class="repo-desc">{{project.description}}</p>
+
+        <div class="card-bottom">
+          <span class="lang-badge">
+            <span class="lang-dot" [style.background]="langColor(project.language)"></span>
+            {{project.language}}
+          </span>
+          <div class="topics">
+            <span *ngFor="let t of project.topics" class="topic">{{t}}</span>
+          </div>
+        </div>
+
+        <div class="card-arrow">→</div>
+      </a>
+    </div>
+  </div>
+</section>
