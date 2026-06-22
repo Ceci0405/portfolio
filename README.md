@@ -1,31 +1,61 @@
-# ✨ Bienvenido/a a mi Portfolio ✨
+# 🌸 Portfolio — Celia Urcola Rosel
 
-¡Hola! Soy Celia Urcola, y te invito a descubrir mi portfolio donde comparto mis proyectos, creatividad y pasión por el desarrollo web. 🚀🎨
+> Fullstack Developer & Analista en Ciberseguridad · Frontend at heart
 
-<br>
+Portfolio personal construido con **Angular 17**, estilo minimalista coreano, modo oscuro y conexión directa a la API de GitHub.
 
-<p align="center">
-  <a href="https://portfolio-git-main-celia-urcolas-projects.vercel.app/" target="_blank">
-    <img src="https://img.shields.io/badge/Visitar%20Portfolio-00C897?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio Badge"/>
-  </a>
-</p>
-
-<br>
-
-## 📎 Enlace directo
-
-👉 [https://portfolio-git-main-celia-urcolas-projects.vercel.app/](https://portfolio-git-main-celia-urcolas-projects.vercel.app/)
+🔗 **[Ver en vivo](https://Ceci0405.github.io/portfolio/)**
 
 ---
 
-💬 **¿Qué encontrarás en mi portfolio?**
-- Proyectos personales y colaborativos.
-- Tecnologías que domino.
-- Un poquito sobre mí.
-- ¡Y mucho cariño en cada detalle! 🌷
+## ✨ Características
+
+- 🌙 Modo oscuro / claro con persistencia en localStorage
+- 🐙 Proyectos cargados desde la API de GitHub
+- 📱 Diseño responsive (mobile first)
+- 🎨 Estilo Korean Minimalist — paleta beige, tipografía Noto Serif KR
+- ⚡ Animaciones suaves al hacer scroll
+- 🔒 Sección de ciberseguridad integrada en el perfil
 
 ---
 
-<p align="center">
-  Hecho con 💖 por Celia Urcola
-</p>
+## 🛠️ Tecnologías
+
+| Tecnología | Uso |
+|---|---|
+| Angular 17 | Framework principal |
+| TypeScript | Lenguaje base |
+| SCSS | Estilos con variables CSS |
+| GitHub API | Carga de proyectos |
+| angular-cli-ghpages | Deploy en GitHub Pages |
+
+---
+
+## 📁 Estructura del proyecto
+
+```
+src/
+├── app/
+│   ├── components/
+│   │   ├── navbar/       # Navegación + toggle dark mode
+│   │   ├── hero/         # Portada con iniciales animadas
+│   │   ├── about/        # Sobre mí
+│   │   ├── skills/       # Habilidades Frontend & Ciberseguridad
+│   │   ├── projects/     # Proyectos de GitHub
+│   │   └── contact/      # Contacto
+│   ├── pages/home/       # Página principal
+│   └── services/
+│       └── github.service.ts  # Conexión con API de GitHub
+└── styles.scss           # Tokens de diseño globales
+```
+
+---
+
+## 📬 Contacto
+
+- 📧 [urcolarosel2002@gmail.com](mailto:urcolarosel2002@gmail.com)
+- 🐙 [github.com/Ceci0405](https://github.com/Ceci0405)
+
+---
+
+<p align="center">Hecho con Angular 17 + ❤️</p>
