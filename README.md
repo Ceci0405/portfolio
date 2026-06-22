@@ -13,7 +13,7 @@ Portfolio personal construido con **Angular 17**, estilo minimalista coreano, mo
 - 🌙 Modo oscuro / claro con persistencia en localStorage
 - 🐙 Proyectos cargados desde la API de GitHub
 - 📱 Diseño responsive (mobile first)
-- 🎨 Estilo Korean Minimalist — paleta beige, tipografía Noto Serif KR
+- 🎨 Estilo Minimalist — paleta beige, tipografía Noto Serif KR
 - ⚡ Animaciones suaves al hacer scroll
 - 🔒 Sección de ciberseguridad integrada en el perfil
 
